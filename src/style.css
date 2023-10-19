@@ -7,3 +7,6 @@
   transform: rotate(-180deg);
   text-align: center;
 }
+.card-whole {
+  border-radius: 4%;
+}
