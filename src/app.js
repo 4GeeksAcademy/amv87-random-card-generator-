@@ -25,3 +25,6 @@ function randomCard() {
     ];
   }
 }
+setInterval(() => {
+  randomCard();
+}, "10000");
