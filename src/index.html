@@ -14,28 +14,28 @@
   <body class="bg-success">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4 mt-5">
-          <div class="card">
-            <div class="card-header bg-white border-0">
+        <div class="col-lg-4 my-5">
+          <div class="card card-whole">
+            <div class="card-header bg-transparent border-0">
               <p id="randomSuit" class="fs-1 text-start"></p>
             </div>
 
             <div class="card-body">
-              <p id="randomNumber" class="text-center py-5"></p>
+              <p id="randomNumber" class="text-center py-5 my-4"></p>
             </div>
 
-            <div class="card-footer bg-white border-0">
+            <div class="card-footer bg-transparent border-0">
               <p id="randomSuit2" class="fs-1"></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="row mt-5 justify-content-center">
+      <div class="row justify-content-center">
         <div class="col-lg-4 text-center">
           <button
             type="button"
             class="btn btn-primary btn-lg"
-            onclick="randomCard()"
+            onclick="window.location.reload()"
           >
             Generate Card
           </button>
