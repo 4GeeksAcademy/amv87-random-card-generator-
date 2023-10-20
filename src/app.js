@@ -25,6 +25,19 @@ function randomCard() {
     ];
   }
 }
+
+window.createRandom = function() {
+  randomCard();
+};
+window.changeSize = function() {
+  document.getElementById("cardWhole").style.width = document.getElementById(
+    "cardWidth"
+  ).value;
+  document.getElementById("cardWhole").style.height = document.getElementById(
+    "cardHeight"
+  ).value;
+};
+
 setInterval(() => {
   randomCard();
 }, "10000");
