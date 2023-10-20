@@ -14,8 +14,8 @@
   <body class="bg-success">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4 my-5">
-          <div class="card card-whole">
+        <div class="col-lg-4 my-4">
+          <div class="card" id="cardWhole">
             <div class="card-header bg-transparent border-0">
               <p id="randomSuit" class="fs-1 text-start"></p>
             </div>
@@ -29,13 +29,48 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 my-4">
+          <div class="input-group input-group-lg my-3">
+            <span class="input-group-text" id="inputGroup-sizing-lg"
+              >Width</span
+            >
+            <input
+              type="text"
+              id="cardWidth"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+          <div class="input-group input-group-lg my-3">
+            <span class="input-group-text" id="inputGroup-sizing-lg"
+              >Height</span
+            >
+            <input
+              type="text"
+              id="cardHeight"
+              class="form-control"
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-lg"
+            />
+          </div>
+          <div class="d-grid gap-2">
+            <button
+              type="button"
+              onclick="changeSize()"
+              class="btn btn-warning"
+            >
+              Change Size
+            </button>
+          </div>
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-4 text-center">
           <button
             type="button"
             class="btn btn-primary btn-lg"
-            onclick="window.location.reload()"
+            onclick="createRandom()"
           >
             Generate Card
           </button>
