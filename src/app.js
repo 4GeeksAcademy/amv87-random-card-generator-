@@ -41,3 +41,4 @@ window.changeSize = function() {
 setInterval(() => {
   randomCard();
 }, "10000");
+setInterval.randomCard
