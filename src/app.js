@@ -11,17 +11,17 @@ function randomCard() {
   document.getElementById("randomNumber").innerHTML =
     cardNumber[Math.floor(Math.random() * cardNumber.length)];
   let suit = cardSuit[Math.floor(Math.random() * cardSuit.length)];
-  document.getElementById("randomSuit").innerHTML = suit;
-  document.getElementById("randomSuit2").innerHTML = suit;
+  document.getElementById("randomSuitTop").innerHTML = suit;
+  document.getElementById("randomSuitBottom").innerHTML = suit;
   if (suit == "♥" || suit == "♦") {
     return [
-      (document.getElementById("randomSuit").style.color = "red"),
-      (document.getElementById("randomSuit2").style.color = "red")
+      (document.getElementById("randomSuitTop").style.color = "red"),
+      (document.getElementById("randomSuitBottom").style.color = "red")
     ];
   } else {
     return [
-      (document.getElementById("randomSuit").style.color = "black"),
-      (document.getElementById("randomSuit2").style.color = "black")
+      (document.getElementById("randomSuitTop").style.color = "black"),
+      (document.getElementById("randomSuitBottom").style.color = "black")
     ];
   }
 }

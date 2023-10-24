@@ -3,7 +3,7 @@
 .text-center {
   font-size: 150px;
 }
-#randomSuit2 {
+#randomSuitBottom {
   transform-origin: 72% 60%;
   transform: rotate(-180deg);
   text-align: center;
