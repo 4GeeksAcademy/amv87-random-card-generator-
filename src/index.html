@@ -14,13 +14,15 @@
   <body class="bg-success">
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-lg-4 my-4">
+        <div class="col d-flex justify-content-center my-5">
           <div class="card" id="cardWhole">
             <div class="card-header bg-transparent border-0">
               <p id="randomSuit" class="fs-1 text-start"></p>
             </div>
 
-            <div class="card-body">
+            <div
+              class="card-body d-flex justify-content-center align-items-center"
+            >
               <p id="randomNumber" class="text-center py-5 my-4"></p>
             </div>
 
@@ -29,7 +31,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 my-4">
+        <div class="col-lg-4 mt-5">
           <div class="input-group input-group-lg my-3">
             <span class="input-group-text" id="inputGroup-sizing-lg"
               >Width</span
@@ -58,22 +60,18 @@
             <button
               type="button"
               onclick="changeSize()"
-              class="btn btn-warning"
+              class="btn btn-warning mb-4"
             >
               Change Size
             </button>
+            <button
+              type="button"
+              class="btn btn-danger btn-lg mb-5"
+              onclick="createRandom()"
+            >
+              Generate Card
+            </button>
           </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-4 text-center">
-          <button
-            type="button"
-            class="btn btn-primary btn-lg"
-            onclick="createRandom()"
-          >
-            Generate Card
-          </button>
         </div>
       </div>
     </div>
