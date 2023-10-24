@@ -1,4 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
 .text-center {
   font-size: 150px;
 }
@@ -7,6 +8,8 @@
   transform: rotate(-180deg);
   text-align: center;
 }
-.card-whole {
-  border-radius: 4%;
+#cardWhole {
+  border-radius: 5%;
+  width: 500px;
+  height: 700px;
 }
