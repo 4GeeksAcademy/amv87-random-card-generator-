@@ -30,15 +30,10 @@ window.createRandom = function() {
   randomCard();
 };
 window.changeSize = function() {
-  document.getElementById("cardWhole").style.width = document.getElementById(
-    "cardWidth"
-  ).value;
-  document.getElementById("cardWhole").style.height = document.getElementById(
-    "cardHeight"
-  ).value;
+  document.getElementById("cardWhole").style.width =
+    document.getElementById("cardWidth").value + "px";
+  document.getElementById("cardWhole").style.height =
+    document.getElementById("cardHeight").value + "px";
 };
 
-setInterval(() => {
-  randomCard();
-}, "10000");
-setInterval.randomCard
+setInterval(randomCard, 10000);
